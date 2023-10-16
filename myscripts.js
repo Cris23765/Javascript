@@ -17,7 +17,7 @@ function checkGuess() {
     if (userGuess === randomNumber) {
         message.textContent = `Congratulations! You guessed the correct number (${randomNumber}) in ${attempts} attempts.`;
         message.style.backgroundColor = "green";
-    } else if (attempts === 10) {
+    } else if (attempts === 5) {
         message.textContent = `Game over! The correct number was ${randomNumber}.`;
         message.style.backgroundColor = "red";
     } else {
