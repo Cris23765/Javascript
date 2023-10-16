@@ -3,6 +3,7 @@ body{
     max-width: 800px;
     min-width: 480px;
     margin: 0 auto;
+    padding-top: 50px;
 }
 div{
     text-align: center;
@@ -15,3 +16,4 @@ h1{
     color: white;
     font-size:50px;
 }
+
