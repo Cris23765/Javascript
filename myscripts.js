@@ -1,5 +1,6 @@
-const randomNumber = Math.floor(Math.random() * 10) + 1;
-
+// This is to say from what range you want the number to be guessed
+const randomNumber = Math.floor(Math.random() * 25) + 1;
+// This is to have the elements in javascript so you can 
 const guessField = document.getElementById("guessField");
 const guessSubmit = document.getElementById("guessSubmit");
 const message = document.querySelector(".message");
