@@ -1,6 +1,6 @@
 // This is to say from what range you want the number to be guessed
 const randomNumber = Math.floor(Math.random() * 25) + 1;
-// This is to have the elements in javascript so you can 
+// This is to have the elements from html in javascript to modify them style or replace them
 const guessField = document.getElementById("guessField");
 const guessSubmit = document.getElementById("guessSubmit");
 const message = document.querySelector(".message");
@@ -14,7 +14,7 @@ function checkGuess() {
     const userGuess = parseInt(guessField.value);
     previousGuesses.push(userGuess);
     attempts++;
-
+// This are to change the text to guess correct right or wrong or if you are close and how many attempts you get 
     if (userGuess === randomNumber) {
         message.textContent = `Congratulations! You guessed the correct number (${randomNumber}) in ${attempts} attempts.`;
         message.style.backgroundColor = "green";
@@ -29,7 +29,7 @@ function checkGuess() {
         } else {
             messageText += " Your guess is too low.";
         }
-
+    // here is we are styling the element with the id of message to change the background to yellow
         message.textContent = messageText;
         message.style.backgroundColor = "yellow";
     }
